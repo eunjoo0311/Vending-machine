@@ -1,0 +1,219 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+p,
+input {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  max-width: 1920px;
+}
+.logo {
+  width: 386px;
+  margin: auto;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: stretch;
+}
+.left {
+  width: 360px;
+  background: royalblue;
+  margin-right: 28px;
+}
+.right {
+  width: 360px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 31px;
+}
+.item {
+  display: flex;
+  background-color: salmon;
+  width: 94px;
+  height: 130px;
+  align-items: center;
+  border: 3px solid #6327fe;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.cola_name {
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+  color: #333333;
+}
+.price_button {
+  width: 70px;
+  height: 22px;
+  background: #6327fe;
+  border-radius: 50px;
+  color: white;
+}
+.price {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+}
+.balance-div {
+  margin-left: 27px;
+  width: 200px;
+  height: 33px;
+  background: #eae8fe;
+}
+.balance {
+  margin: 6px;
+  margin-left: 10px;
+  float: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.won {
+  margin: 6px;
+  margin-right: 10px;
+  float: right;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.deposit {
+  display: flex;
+}
+.button1 {
+  width: 94px;
+  height: 33px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000000;
+}
+.deposit {
+  display: flex;
+  margin-top: 11px;
+  gap: 12px;
+}
+input {
+  border: 1;
+  margin-left: 27px;
+  width: 200px;
+  height: 33px;
+  background: #ffffff;
+}
+.list {
+  display: flex;
+  background-color: red;
+  gap: 12px;
+  margin: 11px 27px;
+}
+.list-left {
+  background: salmon;
+  box-sizing: border-box;
+  width: 200px;
+  height: 106px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+.list-item {
+  display: flex;
+  width: 170px;
+  height: 46px;
+  /* background: #ffffff; */
+  background-color: aqua;
+  margin: 12px;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.get {
+  width: 94px;
+  height: 106px;
+  background: #6327fe;
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.list-img {
+  width: 18px;
+  height: 33px;
+}
+.count {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+.right {
+  width: 360px;
+  background: yellowgreen;
+}
+.money {
+  height: 50px;
+  background: red;
+}
+.money-div {
+  background: #eae8fe;
+  width: 306px;
+  height: 32px;
+  margin: 9px 27px;
+}
+.total-list {
+  margin-top: 20px;
+  background-color: rosybrown;
+}
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 25px;
+  text-align: center;
+}
+.big-list {
+  width: 306px;
+  height: 364px;
+  background: #eae8fe;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 13px 27px 58px 27px;
+  /* padding: 27px 58px; */
+}
+.big-item {
+  display: flex;
+  width: 276px;
+  height: 46px;
+
+  /* background: #ffffff; */
+  background-color: red;
+}
+.total-price {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 8px;
+  float: right;
+  color: #000000;
+}
