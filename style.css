@@ -3,10 +3,25 @@
 * {
   font-family: "Noto Sans KR", sans-serif;
 }
+ul,
+li {
+  list-style: none;
+}
+ul {
+  padding: inline start 0px;
+}
 p,
 input {
   margin: 0;
   padding: 0;
+}
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+}
+body {
+  background: #eae8fe;
 }
 header {
   display: flex;
@@ -18,13 +33,12 @@ header {
 }
 section {
   display: flex;
-  align-items: center;
   justify-content: center;
   align-items: stretch;
 }
 .left {
   width: 360px;
-  background: royalblue;
+  background: #ffffff;
   margin-right: 28px;
 }
 .right {
@@ -39,14 +53,21 @@ section {
 }
 .item {
   display: flex;
-  background-color: salmon;
   width: 94px;
   height: 130px;
   align-items: center;
-  border: 3px solid #6327fe;
   border-radius: 10px;
   text-align: center;
   justify-content: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.item:nth-child(1),
+.item:nth-child(5) {
+  box-shadow: 0 0 0 3px #6327fe inset;
+}
+.item:hover {
+  box-shadow: 0 0 0 3px #6327fe inset;
 }
 .cola_name {
   margin-bottom: 7px;
@@ -72,6 +93,7 @@ section {
   width: 200px;
   height: 33px;
   background: #eae8fe;
+  border-radius: 5px;
 }
 .balance {
   margin: 6px;
@@ -98,7 +120,7 @@ section {
   width: 94px;
   height: 33px;
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   font-weight: 500;
   font-size: 13px;
@@ -111,42 +133,50 @@ section {
   gap: 12px;
 }
 input {
-  border: 1;
   margin-left: 27px;
   width: 200px;
   height: 33px;
   background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
 }
 .list {
   display: flex;
-  background-color: red;
   gap: 12px;
   margin: 11px 27px;
 }
 .list-left {
-  background: salmon;
+  background: #eae8fe;
   box-sizing: border-box;
   width: 200px;
   height: 106px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
+  overflow-y: scroll;
 }
 .list-item {
   display: flex;
-  width: 170px;
   height: 46px;
-  /* background: #ffffff; */
-  background-color: aqua;
+  background: #ffffff;
   margin: 12px;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
+  border-radius: 5px;
+}
+.list-left::-webkit-scrollbar {
+  width: 4px;
+}
+.list-left::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 50px;
 }
 .get {
   width: 94px;
   height: 106px;
   background: #6327fe;
-
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
   font-weight: 700;
   font-size: 13px;
   line-height: 19px;
@@ -166,21 +196,24 @@ input {
 }
 .right {
   width: 360px;
-  background: yellowgreen;
 }
 .money {
   height: 50px;
-  background: red;
+  background: #ffffff;
+  padding: 9px 27px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
 }
 .money-div {
   background: #eae8fe;
   width: 306px;
   height: 32px;
-  margin: 9px 27px;
+  border-radius: 5px;
 }
 .total-list {
   margin-top: 20px;
-  background-color: rosybrown;
+  background: #fff;
+  height: 474px;
 }
 .title {
   font-weight: 700;
@@ -196,24 +229,58 @@ input {
   background: #eae8fe;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   align-items: flex-start;
-  margin: 13px 27px 58px 27px;
-  /* padding: 27px 58px; */
+  margin: 13px 27px 8px 27px;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+.big-list::-webkit-scrollbar {
+  width: 4px;
+  height: 79px;
+}
+.big-list::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 50px;
 }
 .big-item {
   display: flex;
-  width: 276px;
+  width: 256px;
   height: 46px;
-
-  /* background: #ffffff; */
-  background-color: red;
+  margin: 12px 18px 0px 12px;
+  background: #ffffff;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.list-group {
+  display: flex;
+  align-items: center;
+  gap: 10.04px;
 }
 .total-price {
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
-  margin-top: 8px;
+  margin-bottom: 26px;
   float: right;
+  margin-right: 27px;
   color: #000000;
+}
+.sold-out {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  background-image: url(./images/Soldout.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  width: 94px;
+  height: 130px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
